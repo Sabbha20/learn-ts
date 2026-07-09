@@ -29,3 +29,25 @@ user = {
 
 console.log(`User details: Name - ${user.name}, Age - ${user.age}, Valid - ${user.isValid}, ID - ${user.id}`);
 
+// Arrays
+
+let hobbies: string[];
+
+let fruits: Array<string>; // Another way to declare an array of strings
+
+/**
+ * Similarly we can have arrays of numbers, booleans, or even objects. For example:
+ * 
+ * let numbers: number[] = [1, 2, 3, 4, 5];
+ * let flags: boolean[] = [true, false, true];
+ * let users: { name: string; age: number }[] = [
+ *     { name: "Alice", age: 25 },
+ *     { name: "Bob", age: 30 }
+ * ];
+ */
+
+hobbies = ["Reading", "Traveling", "Cooking"];
+fruits = ["Apple", "Banana", "Cherry"];
+
+console.log(`Hobbies: ${hobbies.join(", ")}`);
+console.log(`Fruits: ${fruits.join(", ")}`);
