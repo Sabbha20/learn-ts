@@ -8,6 +8,11 @@ console.log(`My name is ${usrname} and I am ${age} years old. It is ${mybool} th
 let usrID: string | number = "User 1001";
 console.log(`User ID is "${usrID}"`);
 
+// Custom type for user ID
+type UserID = string | number;
+let userId: UserID = "User 1001";
+console.log(`User ID is "${userId}"`);
+
 // changing the value of usrID to a number
 usrID = 1001;
 console.log(`User ID is now "${usrID}"`);
@@ -28,6 +33,24 @@ user = {
 };
 
 console.log(`User details: Name - ${user.name}, Age - ${user.age}, Valid - ${user.isValid}, ID - ${user.id}`);
+
+// Custom types
+type User = {
+    name: string;
+    age: number;
+    isValid: boolean;
+    id: UserID;
+};
+
+let newUser: User;
+newUser = {
+    name: "Sabbha",
+    age: 31,
+    isValid: true,
+    id: 1001
+};
+
+console.log(`New User details: Name - ${newUser.name}, Age - ${newUser.age}, Valid - ${newUser.isValid}, ID - ${newUser.id}`);
 
 // Arrays
 
